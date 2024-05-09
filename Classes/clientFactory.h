@@ -1,15 +1,20 @@
 #pragma once
 #include <iostream>
 #include "client.h"
-#include "clientDisc.h"
-#include "clientEmb.h"
+#include "clientHandicapped.h"
+#include "clientPregnant.h"
 #include "clientNormal.h"
 #include "clientOld.h"
-
 using namespace std;
+
 class clientFactory
 {
 public:
-    clientFactory();
-    client* createClient(string name, int age, string type);
+    clientFactory(int numOldClient, int numHandicappedClient, int numPregnantClient, int numNormalClient);
+    client* createClient(string name, int age, int type);
+private:
+    int numOldClient;
+    int numHandicappedClient;
+    int numPregnantClient;
+    int numNormalClient;
 };

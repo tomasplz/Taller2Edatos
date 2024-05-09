@@ -1,12 +1,12 @@
 #include <iostream>
-#include <stack>
-#include "Sys.h"
+#include "System/Sys.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "hello world " << endl;
+    Sys *sys = new Sys();
+    sys -> run();
     return 0;
 }
 

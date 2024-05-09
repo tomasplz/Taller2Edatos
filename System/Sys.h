@@ -2,21 +2,35 @@
 #include <iostream>
 #include <stack>
 #include <queue>
+#include <limits>
+#include <fstream>
+#include "../Classes/category.h"
 #include "../Classes/clientFactory.h"
 #include "../Classes/product.h"
 using namespace std;
 
 class Sys {
 private:
-// category categ = new category(); // Categorias unidas por nodos (forma 1)
-// client currentClient; // Current client (forma 2)
+int cantCategories;
+int thirdAgeRange; int handicappedRange; int pregnantRange; int normalRange;
+category *categories;
+clientFactory *cf;
+bool loadData();
+bool saveData();
+void showMenu();
+void showMenuManageProducts();
+void showMenuManageClients();
+void addCategory(string name);
+
+void ShowQueues();
 
 public:
-void loadData();
-void saveData();
-void giveNumber();
-void callNextClient();
-void createClient();
-void addProduct();
-void generateTicket();
+Sys();
+void run();
+//Manage clients
+client* callNextClient(); //option 1
+void addClientToQueue(); //option 2
+//Manage Products
+void addProduct(); //option 1
+void generateSellTickets(); //option 2
 };

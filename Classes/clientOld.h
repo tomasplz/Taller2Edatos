@@ -3,7 +3,7 @@
 #include "client.h"
 using namespace std;
 
-class clientOld : client{
+class clientOld : public client{
 public:
-    clientOld(string name, int age);
+    clientOld(string name, int age, int number);
 };
