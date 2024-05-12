@@ -5,6 +5,6 @@ using namespace std;
 
 class clientPregnant : public client{
 public:
-    clientPregnant(string name, int age, int number);
-    virtual ~clientPregnant();
+    clientPregnant(string name, int age, int number); //constructor
+    virtual ~clientPregnant(); //destructor
 };

@@ -11,11 +11,12 @@ class client;
 class venta{
 private:
 queue<product> *products; // Added variable name "products" after the data type.
+client* Client; // Client pointer variable.
 public:
-client* Client;
-venta(client *Client);
-void setProducts(queue<product> *products);
-void printProducts();
-client *getClient();
-int getTotalPrice();
+venta(client *Client); // Constructor with a client pointer as a parameter.
+void setProducts(queue<product> *products); // Set products method with a queue of products pointer as a parameter.
+void printProducts(); // Print products method.
+client *getClient(); // Get client method.
+int getTotalPrice(); // Get total price method.
+~venta(); // Destructor.
 };
