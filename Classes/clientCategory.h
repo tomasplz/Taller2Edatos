@@ -5,19 +5,20 @@
 
 using namespace std;
 
-class category{
+class clientCategory{
 private:
     string name;
     queue<client> *clients;
-    category* next;
+    clientCategory* next;
 public:
-    category(string name);
+    clientCategory(string name);
     string getName();
     void addClient(client *client);
     void removeLastClient();
     client* getLastClient();
     void showClients();
-    void setNext(category* next);
-    category* getNext();
+    void setNext(clientCategory* next);
+    clientCategory* getNext();
+    ~clientCategory();
     bool isEmpty();
 };

@@ -32,3 +32,6 @@ client* clientFactory::createClient(string name, int age, int type)
         break;
     }
 };
+clientFactory::~clientFactory()
+{
+}

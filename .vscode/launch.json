@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    
+    {
+      "name": "C/C++: g++ Compilar y depurar el archivo activo",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar la impresión con sangría para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Establecer tipo de desensamblado en Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "existing": false,
+      "preLaunchTask": "C/C++: g++ compilar archivo activo",
+      "detail": "preLaunchTask: C/C++: g++ compilar archivo activo",
+      "taskDetail": "Tarea generada por el depurador.",
+      "taskStatus": "Recently Used Task",
+      "isDefault": true,
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/workspaces/Taller2Edatos",
+      "program": "/workspaces/Taller2Edatos/main.cpp"
+    }
+  ]
+}

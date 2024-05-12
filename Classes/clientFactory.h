@@ -12,6 +12,7 @@ class clientFactory
 public:
     clientFactory(int numOldClient, int numHandicappedClient, int numPregnantClient, int numNormalClient);
     client* createClient(string name, int age, int type);
+    ~clientFactory();
 private:
     int numOldClient;
     int numHandicappedClient;

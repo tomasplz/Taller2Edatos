@@ -6,4 +6,5 @@ using namespace std;
 class clientHandicapped : public client{
 public:
     clientHandicapped(string name, int age, int number);
+    virtual ~clientHandicapped();
 };

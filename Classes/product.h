@@ -20,4 +20,5 @@ public:
     int getPrice();
     void setId(int id);
     int getId();
+    ~product();
 };

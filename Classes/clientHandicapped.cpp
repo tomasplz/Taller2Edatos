@@ -4,3 +4,6 @@ clientHandicapped::clientHandicapped(string name, int age, int number) : client(
 {
 }
 
+clientHandicapped::~clientHandicapped()
+{
+}

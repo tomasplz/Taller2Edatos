@@ -18,3 +18,4 @@ void product::setPrice(int price){this->price = price;}
 int product::getPrice(){return price;}
 void product::setId(int id){this->id = id;}
 int product::getId(){ return id;}
+product::~product(){}

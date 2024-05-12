@@ -1,22 +1,22 @@
-#include "category.h"
+#include "clientCategory.h"
 
-category::category(string name)
+clientCategory::clientCategory(string name)
 {
     this->name = name;
     clients = new queue<client>;
     next = NULL;
 }
 
-void category::addClient(client* c)
+void clientCategory::addClient(client* c)
 {clients->push(*c);}
 
-void category::removeLastClient()
+void clientCategory::removeLastClient()
 {clients->pop();}
 
-string category::getName()
+string clientCategory::getName()
 {return name;}
 
-void category::showClients()
+void clientCategory::showClients()
 {
     queue<client> temp = *clients;
     while (!temp.empty())
@@ -26,19 +26,24 @@ void category::showClients()
     }
 }
 
-category* category::getNext()
+clientCategory* clientCategory::getNext()
 {return next;}
 
-void category::setNext(category* next)
+void clientCategory::setNext(clientCategory* next)
 {this->next = next;}
 
-bool category::isEmpty(){
+bool clientCategory::isEmpty(){
     if (clients->empty())
     return true;
     else
     return false;
 }
 
-client* category::getLastClient(){
+client* clientCategory::getLastClient(){
     return &clients->back();
+}
+
+clientCategory::~clientCategory()
+{
+    delete clients;
 }

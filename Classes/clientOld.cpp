@@ -4,3 +4,6 @@ clientOld::clientOld(string name, int age, int number) : client(name, age, numbe
 {
 }
 
+clientOld::~clientOld()
+{
+}
