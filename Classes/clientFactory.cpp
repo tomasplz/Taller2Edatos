@@ -1,12 +1,13 @@
 #include "clientFactory.h"
 
 /**
- * @brief Constructs a clientFactory object with the specified ranges for different client types.
+ * @brief Construct a new client Factory::client Factory object
  * 
- * @param thirdAgeRange The range for third age clients.
- * @param handicappedRange The range for handicapped clients.
- * @param pregnantRange The range for pregnant clients.
- * @param normalRange The range for normal clients.
+ * @param thirdAgeRange
+ * @param handicappedRange
+ * @param pregnantRange
+ * @param normalRange
+ * @return clientFactory
  */
 clientFactory::clientFactory(int thirdAgeRange, int handicappedRange, int pregnantRange, int normalRange)
 {
@@ -17,14 +18,8 @@ clientFactory::clientFactory(int thirdAgeRange, int handicappedRange, int pregna
 }
 
 /**
- * @brief Creates a new client object.
+ * @brief Destroy the client Factory::client Factory object
  * 
- * This method creates a new client object based on the specified type.
- * 
- * @param name The name of the client.
- * @param age The age of the client.
- * @param type The type of the client.
- * @return client* A pointer to the newly created client object.
  */
 client* clientFactory::createClient(string name, int age, int type)
 {
@@ -50,13 +45,11 @@ client* clientFactory::createClient(string name, int age, int type)
         return NULL;
         break;
     }
-}
+};
 
 /**
- * @brief Destructor for the clientFactory class.
+ * @brief Destroy the client Factory::client Factory object
  * 
- * This destructor is responsible for cleaning up any resources
- * allocated by the clientFactory class.
  */
 clientFactory::~clientFactory()
 {

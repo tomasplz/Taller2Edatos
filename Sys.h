@@ -4,7 +4,6 @@
 #include <queue>
 #include <limits>
 #include <fstream>
-#include <typeinfo>
 #include "../Classes/clientCategory.h"
 #include "../Classes/clientFactory.h"
 #include "../Classes/product.h"

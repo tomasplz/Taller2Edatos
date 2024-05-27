@@ -1,10 +1,12 @@
 #include "clientCategory.h"
 
+// Constructor
 /**
- * @brief Constructs a new clientCategory object with the given name.
+ * @brief Construct a new client Category::client Category object
  * 
- * @param name The name of the client category.
- */
+ * @param name
+ * @return clientCategory
+*/
 clientCategory::clientCategory(string name)
 {
     this->name = name;
@@ -13,27 +15,31 @@ clientCategory::clientCategory(string name)
 }
 
 /**
- * @brief Adds a client to the client category.
+ * @brief Add a client to the queue
  * 
- * @param c The client to be added.
- */
-void clientCategory::addClient(client* c){clients->push(*c);}
+ * @param c
+ * @return void
+*/
+void clientCategory::addClient(client* c)
+{clients->push(*c);}
 
 /**
- * @brief Removes the last client from the client category.
- */
-void clientCategory::removeLastClient(){clients->pop();}
-
-/**
- * @brief Gets the name of the client category.
+ * @brief Remove the last client from the queue
  * 
- * @return string The name of the client category.
- */
-string clientCategory::getName(){return name;}
+ * @return void
+*/
+void clientCategory::removeLastClient()
+{clients->pop();}
 
 /**
- * @brief Shows the clients from the client category.
- */
+ * @brief Get the Name object
+ * 
+ * @return string
+
+*/
+string clientCategory::getName()
+{return name;}
+
 void clientCategory::showClients()
 {
     queue<client> temp = *clients;
@@ -45,39 +51,45 @@ void clientCategory::showClients()
 }
 
 /**
- * @brief Get the next client category object.
- * 
- * @return clientCategory* Pointer to the next client category object.
- */
-clientCategory* clientCategory::getNext(){return next;}
+ * @brief Get the next category object
+*/
+clientCategory *clientCategory::getNext()
+{return next;}
 
 /**
- * @brief Set the next client category object.
+ * @brief Set the next category object
  * 
- * @param next Pointer to the next client category object.
- */
-void clientCategory::setNext(clientCategory* next){this->next = next;}
-
+ * @param next
+*/
+void clientCategory::setNext(clientCategory* next)
+{this->next = next;}
 
 /**
- * @brief Check if the client category is empty.
+ * @brief Check if the category is empty
  * 
- * @return true If the client category is empty.
- * @return false If the client category is not empty.
- */
+ * @return true
+ * @return false
+*/
 bool clientCategory::isEmpty(){
-    return clients->empty();
+    if (clients->empty())
+    return true;
+    else
+    return false;
 }
 
 /**
- * @brief Get the last client from the client category.
+ * @brief Get the last client object
  * 
- * @return client* Pointer to the last client from the client category.
- */
-client* clientCategory::getLastClient(){return &clients->back();}
+ * @return client*
+*/
+client* clientCategory::getLastClient(){
+    return &clients->back();
+}
 
 /**
- * @brief Destroys the clientCategory object.
- * 
- */
-clientCategory::~clientCategory(){delete clients;}
+ * @brief Destroy the client Category::client Category object
+*/
+clientCategory::~clientCategory()
+{
+    delete clients;
+}

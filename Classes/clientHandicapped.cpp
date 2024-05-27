@@ -1,18 +1,15 @@
 #include "clientHandicapped.h"
 
+// Constructor
 /**
- * @brief Constructs a new clientHandicapped object.
+ * @brief Construct a new client Handicapped::client Handicapped object
  * 
- * @param name The name of the handicapped client.
- * @param age The age of the handicapped client.
- * @param number The client number of the handicapped client.
- */
+ * @param name
+ * @param age
+ * @param number
+ * @return clientHandicapped
+*/
 clientHandicapped::clientHandicapped(string name, int age, int number) : client(name, age, number){}
 
-/**
- * @brief Destructor for the clientHandicapped class.
- * 
- * This destructor is responsible for cleaning up any resources
- * allocated by the clientHandicapped class.
- */
+// Destructor
 clientHandicapped::~clientHandicapped(){}

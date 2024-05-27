@@ -7,18 +7,18 @@ using namespace std;
 
 class clientCategory{
 private:
-    string name; // Name of the category.
-    queue<client> *clients; // Clients from the category.
-    clientCategory* next; // Next category.
+    string name; // Added variable name "name" after the data type.
+    queue<client> *clients; // Added variable name "clients" after the data type.
+    clientCategory* next; // Added variable name "next" after the data type.
 public:
-    clientCategory(string name); // Constructor.
-    string getName(); // Get the name of the category.
-    void addClient(client *client); // Add a client to the category.
-    void removeLastClient(); // Remove the last client from the category.
-    client* getLastClient(); // Get the last client from the category.
-    void showClients(); // Show the clients from the category.
-    void setNext(clientCategory* next); // Set the next category.
-    clientCategory* getNext(); // Get the next category.
-    bool isEmpty(); // Check if the category is empty.
-    ~clientCategory(); // Destructor.
+    clientCategory(string name); // Constructor
+    string getName(); // Get name
+    void addClient(client *client); // Add client
+    void removeLastClient(); // Remove last client
+    client* getLastClient(); // Get last client
+    void showClients(); // Show clients
+    void setNext(clientCategory* next); // Set next
+    clientCategory* getNext(); // Get next
+    bool isEmpty(); // Check if the category is empty
+    ~clientCategory(); // Destructor
 };

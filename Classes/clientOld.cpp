@@ -1,20 +1,15 @@
 #include "clientOld.h"
 
+// Constructor
 /**
- * @brief Constructs a new clientOld object.
+ * @brief Construct a new client Old::client Old object
  * 
- * This constructor initializes a new clientOld object with the specified name, age, and number.
- * 
- * @param name The name of the client.
- * @param age The age of the client.
- * @param number The client's number.
- */
+ * @param name
+ * @param age
+ * @param number
+ * @return clientOld
+*/
 clientOld::clientOld(string name, int age, int number) : client(name, age, number){}
 
-/**
- * @brief Destructor for the clientOld class.
- * 
- * This destructor is responsible for cleaning up any resources
- * allocated by the clientOld class.
- */
+// Destructor
 clientOld::~clientOld(){}

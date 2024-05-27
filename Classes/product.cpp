@@ -1,14 +1,16 @@
 #include "product.h"
 
+// Constructor
 /**
- * @brief Constructs a new product object.
+ * @brief Construct a new product::product object
  * 
- * @param name The name of the product.
- * @param category The category of the product.
- * @param subCategory The sub-category of the product.
- * @param price The price of the product.
- * @param id The ID of the product.
- */
+ * @param name
+ * @param category
+ * @param subCategory
+ * @param price
+ * @param id
+ * @return product
+*/
 product::product(string name, string category, string subCategory, int price, int id){
     this->name = name;
     this->category = category;
@@ -17,78 +19,74 @@ product::product(string name, string category, string subCategory, int price, in
     this->id = id;
 }
 
+// Setters
 /**
- * @brief Sets the name of the product.
+ * @brief Set the Name object
  * 
- * @param name The name of the product.
+ * @param name
+ * @return void
  */
 void product::setName(string name){this->name = name;}
-
 /**
- * @brief Gets the name of the product.
+ * @brief Set the Category object
  * 
- * @return string The name of the product.
- */
-string product::getName(){return name;}
-
-/**
- * @brief Sets the category of the product.
- * 
- * @param category The category of the product.
+ * @param category
+ * @return void
  */
 void product::setCategory(string category){this->category = category;}
-
 /**
- * @brief Gets the category of the product.
+ * @brief Set the Sub Category object
  * 
- * @return string The category of the product.
- */
-string product::getCategory(){return category;}
-
-/**
- * @brief Sets the sub-category of the product.
- * 
- * @param subCategory The sub-category of the product.
+ * @param subCategory
+ * @return void
  */
 void product::setSubCategory(string subCategory){this->subCategory = subCategory;}
-
 /**
- * @brief Gets the sub-category of the product.
+ * @brief Set the Price object
  * 
- * @return string The sub-category of the product.
- */
-string product::getSubCategory(){return subCategory;}
-
-/**
- * @brief Sets the price of the product.
- * 
- * @param price The price of the product.
+ * @param price
+ * @return void
  */
 void product::setPrice(int price){this->price = price;}
-
 /**
- * @brief Gets the price of the product.
+ * @brief Set the Id object
  * 
- * @return int The price of the product.
- */
-int product::getPrice(){return price;}
-
-/**
- * @brief Sets the ID of the product.
- * 
- * @param id The ID of the product.
+ * @param id
+ * @return void
  */
 void product::setId(int id){this->id = id;}
 
+// Getters
 /**
- * @brief Gets the ID of the product.
+ * @brief Get the Name object
  * 
- * @return int The ID of the product.
+ * @return string
+ */
+string product::getName(){return name;}
+/**
+ * @brief Get the Category object
+ * 
+ * @return string
+ */
+string product::getCategory(){return category;}
+/**
+ * @brief Get the Sub Category object
+ * 
+ * @return string
+ */
+string product::getSubCategory(){return subCategory;}
+/**
+ * @brief Get the Price object
+ * 
+ * @return int
+ */
+int product::getPrice(){return price;}
+/**
+ * @brief Get the Id object
+ * 
+ * @return int
  */
 int product::getId(){ return id;}
 
-/**
- * @brief Destroys the product object.
- * 
- */
+// Destructor
 product::~product(){}

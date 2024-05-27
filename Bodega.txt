@@ -1,30 +1,25 @@
-Vendaje elástico (5m);Productos de primeros auxilios;Vendajes y apósitos;500;4001
-Apósitos adhesivos (caja de 100 unidades);Productos de primeros auxilios;Vendajes y apósitos;1000;4002
-Gasas estériles (paquete de 10 unidades);Productos de primeros auxilios;Vendajes y apósitos;600;4003
-Alcohol al 70% (100ml);Productos de primeros auxilios;Antisépticos y desinfectantes;800;4004
-Agua oxigenada (10 volúmenes);Productos de primeros auxilios;Antisépticos y desinfectantes;500;4005
-Povidona yodada (10%);Productos de primeros auxilios;Antisépticos y desinfectantes;700;4006
-Pañales desechables (talla M);Cuidado del bebé;Higiene del bebé;4000;5001
-Toallitas húmedas para bebé (paquete de 100 unidades);Cuidado del bebé;Higiene del bebé;2500;5002
-Crema para cambiar pañales (100g);Cuidado del bebé;Higiene del bebé;1800;5003
-Leche de fórmula (180g);Cuidado del bebé;Alimentación del bebé;5500;5004
-Biberón (260ml);Cuidado del bebé;Alimentación del bebé;1500;5005
 Chupete de silicona;Cuidado del bebé;Alimentación del bebé;800;5006
+Biberón (260ml);Cuidado del bebé;Alimentación del bebé;1500;5005
+Leche de fórmula (180g);Cuidado del bebé;Alimentación del bebé;5500;5004
+Crema para cambiar pañales (100g);Cuidado del bebé;Higiene del bebé;1800;5003
+Pañales desechables (talla M);Cuidado del bebé;Higiene del bebé;4000;5001
+Povidona yodada (10%);Productos de primeros auxilios;Antisépticos y desinfectantes;700;4006
+Agua oxigenada (10 volúmenes);Productos de primeros auxilios;Antisépticos y desinfectantes;500;4005
+Alcohol al 70% (100ml);Productos de primeros auxilios;Antisépticos y desinfectantes;800;4004
+Gasas estériles (paquete de 10 unidades);Productos de primeros auxilios;Vendajes y apósitos;600;4003
+Apósitos adhesivos (caja de 100 unidades);Productos de primeros auxilios;Vendajes y apósitos;1000;4002
+Vendaje elástico (5m);Productos de primeros auxilios;Vendajes y apósitos;500;4001
+Hierro (65mg);Suplementos alimenticios;Minerales;400;3006
+Magnesio (400mg);Suplementos alimenticios;Minerales;600;3005
+Calcio (500mg);Suplementos alimenticios;Minerales;700;3004
+Vitamina D (1000 UI);Suplementos alimenticios;Vitaminas;600;3003
 Multivitamínico;Suplementos alimenticios;Vitaminas;1000;3001
 Vitamina C (1000mg);Suplementos alimenticios;Vitaminas;500;3002
-Vitamina D (1000 UI);Suplementos alimenticios;Vitaminas;600;3003
-Calcio (500mg);Suplementos alimenticios;Minerales;700;3004
-Magnesio (400mg);Suplementos alimenticios;Minerales;600;3005
-Hierro (65mg);Suplementos alimenticios;Minerales;400;3006
-Pasta de dientes (100g);Productos de higiene personal;Cuidado dental;1200;2001
-Cepillo de dientes;Productos de higiene personal;Cuidado dental;800;2002
-Enjuague bucal (250ml);Productos de higiene personal;Cuidado dental;900;2003
-Crema hidratante (100g);Productos de higiene personal;Cuidado de la piel;1500;2004
-Jabón líquido (500ml);Productos de higiene personal;Cuidado de la piel;800;2005
 Protector solar (FPS 50);Productos de higiene personal;Cuidado de la piel;2000;2006
-Ibuprofeno (400mg);Medicamentos;Analgésicos;500;1001
-Paracetamol (500mg);Medicamentos;Analgésicos;350;1002
-Aspirina (500mg);Medicamentos;Analgésicos;250;1003
+Jabón líquido (500ml);Productos de higiene personal;Cuidado de la piel;800;2005
+Cepillo de dientes;Productos de higiene personal;Cuidado dental;800;2002
 Acetaminofén (500mg);Medicamentos;Antipiréticos;400;1004
+Aspirina (500mg);Medicamentos;Analgésicos;250;1003
+Paracetamol (500mg);Medicamentos;Analgésicos;350;1002
+Ibuprofeno (400mg);Medicamentos;Analgésicos;500;1001
 Ketaprofeno (200mg);Medicamentos;Antipiréticos;300;1005
-Dipirona (500mg);Medicamentos;Antipiréticos;450;1006

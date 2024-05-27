@@ -6,14 +6,14 @@ using namespace std;
 
 class productNode{
 private:
-string clave; //key
-product currentProduct; //product
-productNode* next; //pointer to next node
+string clave; // Key
+product currentProduct; // Product
+productNode* next; // Next node
 public:
-productNode(string clave, product currentProduct, productNode* next); //constructor
-string getClave(); //get key
-product getCurrentProduct(); //get product
-productNode *getNext(); //get next node
-void setNext(productNode* next); //set next node
-~productNode(); //destructor
+productNode(string clave, product currentProduct, productNode* next); // Constructor
+string getClave(); // Get key
+product getCurrentProduct(); // Get product
+productNode *getNext(); // Get next node
+void setNext(productNode* next); // Set next node
+~productNode(); // Destructor
 };

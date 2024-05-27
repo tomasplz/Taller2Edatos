@@ -1,44 +1,55 @@
 #include "productNode.h"
 
-/**
- * @brief Constructs a new productNode object.
+// Constructor
+/** 
+ * @brief Construct a new product Node::product Node object
  * 
- * @param clave The key of the productNode.
- * @param currentProduct The product associated with the productNode.
- * @param next Pointer to the next productNode in the linked list.
- */
+ * @param clave
+ * @param currentProduct
+ * @param next
+ * @return productNode
+*/
 productNode::productNode(string clave, product currentProduct, productNode* next): clave(clave), currentProduct(currentProduct), next(next){}
 
+// Getters
 /**
- * @brief Gets the product associated with the productNode.
+ * @brief Get the Current Product object
  * 
- * @return product The product associated with the productNode.
+ * @return product
  */
-product productNode::getCurrentProduct(){return currentProduct;}
+product productNode::getCurrentProduct(){
+    return currentProduct;
+};
 
 /**
- * @brief Gets the key of the productNode.
+ * @brief Get the Clave object
  * 
- * @return string The key of the productNode.
+ * @return string
  */
-string productNode::getClave(){return clave;}
+string productNode::getClave(){
+    return clave;
+};
 
 /**
- * @brief Gets the next productNode in the linked list.
+ * @brief Get the Next object
  * 
- * @return productNode* The next productNode in the linked list.
+ * @return productNode*
  */
-productNode* productNode::getNext(){return next;}
+productNode* productNode::getNext(){
+    return next;
+};
 
+// Setters
 /**
- * @brief Sets the next productNode in the linked list.
+ * @brief Set the Next object
  * 
- * @param next The next productNode in the linked list.
+ * @param next
+ * @return void
  */
-void productNode::setNext(productNode* next){this->next = next;}
+void productNode::setNext(productNode* next){
+    this->next = next;
+};
 
-/**
- * @brief Destroys the productNode object.
- * 
- */
-productNode::~productNode(){}
+// Destructor
+productNode::~productNode(){
+}

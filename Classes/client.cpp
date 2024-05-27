@@ -1,75 +1,76 @@
 #include "client.h"
 
+// Constructor
 /**
- * @brief Constructs a new client object with the given name, age, and number.
+ * @brief Construct a new client::client object
  * 
- * @param name The name of the client.
- * @param age The age of the client.
- * @param number The client's number.
- */
+ * @param name
+ * @param age
+ * @param number
+ * @return client
+*/
 client::client(string name, int age, int number) { this->name = name; this->age = age; this->number = number; 
 ventas = new queue<venta>;
 }
 
+// Constructor
 /**
- * @brief Default constructor for the client class.
+ * @brief Construct a new client::client object
  * 
- * This constructor initializes a new instance of the client class.
- */
-client::client(){}
+ * @return client
+*/
+client::client(){
+};
 
+// Setters
 /**
- * @brief Sets the name of the client.
+ * @brief Set the Name object
  * 
- * @param name The name of the client.
- */
+ * @param name
+*/
 void client::setName(string name) {this->name = name;}
-
 /**
- * @brief Sets the age of the client.
+ * @brief Set the Age object
  * 
- * @param age The age of the client.
- */
+ * @param age
+*/
 void client::setAge(int age) {this->age = age;}
-
 /**
- * @brief Sets the number of the client.
+ * @brief Set the Number object
  * 
- * @param number The number of the client.
- */
+ * @param number
+*/
 void client::setNumber(int number) {this->number = number;}
-
+// Getters
 /**
- * @brief Gets the name of the client.
+ * @brief Get the Name object
  * 
- * @return string The name of the client.
- */
+ * @return string
+*/
 string client::getName() {return name;}
-
 /**
- * @brief Gets the age of the client.
+ * @brief Get the Age object
  * 
- * @return int The age of the client.
- */
+ * @return int
+*/
 int client::getAge() {return age;}
-
 /**
- * @brief Gets the number of the client.
+ * @brief Get the Number object
  * 
- * @return int The number of the client.
- */
+ * @return int
+*/
 int client::getNumber() {return number;}
-
 /**
- * @brief Adds a venta to the client.
+ * @brief Add a sell to the queue
  * 
- * @param saleMade The venta to be added.
- */
-void client::addVenta(venta saleMade){ventas->push(saleMade);}
-
+ * @param saleMade
+*/
+void client::addVenta(venta saleMade){
+    ventas->push(saleMade);
+}
 /**
- * @brief Shows the ventas of the client.
- */
+ * @brief Show sells
+*/
 void client::showVentas(){
     queue<venta> tempQueue = *ventas;
     int i = 1;
@@ -81,11 +82,9 @@ void client::showVentas(){
         i++;
     }
 }
-
+// Destructor
 /**
- * @brief Destructor for the client class.
+ * @brief Destroy the client::client object
  * 
- * This destructor is responsible for cleaning up any resources
- * allocated by the client class.
- */
+*/
 client::~client(){}

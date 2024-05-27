@@ -1,24 +1,33 @@
 #include "venta.h"
 
+// Constructor
 /**
- * @brief Constructs a new venta object with the given client.
+ * @brief Construct a new venta::venta object
  * 
- * @param Client A pointer to the client associated with the venta.
+ * @param Client
  */
-venta::venta(client *Client) : Client(Client)
+venta::venta(client *Client)
 {
+    this->Client = Client;
     products = new queue<product>();
-}
+};
 
+// Setters
 /**
- * @brief Sets the products of the venta.
+ * @brief Set the Products object
  * 
- * @param products A pointer to a queue of products.
+ * @param products
+ * @return void
  */
-void venta::setProducts(queue<product> *products){this->products = products;}
+void venta::setProducts(queue<product> *products){
+    this->products = products;
+};
 
+// Getters
 /**
- * @brief Prints the products of the venta.
+ * @brief Print the products in the queue
+ * 
+ * @return void
  */
 void venta::printProducts() { 
     queue<product> tempQueue = *products; // Create a temporary queue to preserve the original queue
@@ -31,16 +40,18 @@ void venta::printProducts() {
 }
 
 /**
- * @brief Gets the client associated with the venta.
+ * @brief Get the Client object
  * 
- * @return client* A pointer to the client associated with the venta.
+ * @return client*
  */
-client* venta::getClient() {return Client;}
+client* venta::getClient() {
+    return Client;
+}
 
 /**
- * @brief Gets the total price of the products in the venta.
+ * @brief Get the Total Price object
  * 
- * @return int The total price of the products in the venta.
+ * @return int
  */
 int venta::getTotalPrice() {
     queue<product> tempQueue = *products;
@@ -52,12 +63,4 @@ int venta::getTotalPrice() {
         tempQueue.pop();
     }
     return totalPrice;
-}
-
-/**
- * @brief Destroys the venta object.
- */
-venta::~venta()
-{
-    delete products;
 }

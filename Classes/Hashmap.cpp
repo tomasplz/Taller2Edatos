@@ -1,10 +1,12 @@
 #include "Hashmap.h"
 
+// Constructor
 /**
- * @brief Constructs a new Hashmap object with the specified size.
+ * @brief Construct a new Hashmap::Hashmap object
  * 
- * @param tamano The size of the hashmap.
- */
+ * @param tamano
+ * @return Hashmap
+*/
 Hashmap::Hashmap(int tamano)
 { 
     this->tamano = tamano;
@@ -14,11 +16,11 @@ Hashmap::Hashmap(int tamano)
     }
 }
 
+// Getters
 /**
- * @brief Hash function to determine the index of the key in the hashmap.
+ * @brief Get the Tamano object
  * 
- * @param clave The key to hash.
- * @return int The index of the key in the hashmap.
+ * @return int
  */
 int Hashmap::hash(string clave) {
     int suma = 0;
@@ -29,22 +31,10 @@ int Hashmap::hash(string clave) {
 }
 
 /**
- * @brief Inserts a product into the hashmap.
+ * @brief Get the Current Product object
  * 
- * @param valor The product to insert.
- * @param clave The key of the product.
- */
-void Hashmap::insertar(product valor, string clave) {
-    int indice = hash(clave);
-    productNode* nuevo = new productNode(clave, valor, tabla[indice]);
-    tabla[indice] = nuevo;
-}
-
-/**
- * @brief Searches for a product in the hashmap by ID.
- * 
- * @param id The ID of the product to search for.
- * @return product The product with the specified ID.
+ * @param id
+ * @return product
  */
 product Hashmap::buscar(int id) {
     product currentProduct = product("No encontrado", "No encontrado", "No encontrado", 0, -1);
@@ -60,11 +50,43 @@ product Hashmap::buscar(int id) {
     }
     return currentProduct;
 }
+/**
+ * @brief Get the Tamano object
+ * 
+ * @return int
+ */
+int Hashmap::getTamano() {
+    return tamano;
+}
 
 /**
- * @brief Prints all products with the same key.
+ * @brief Get the Tabla object
  * 
- * @param clave The key to search for.
+ * @return productNode**
+ */
+productNode** Hashmap::getTabla() {
+    return tabla;
+}
+
+// Setters
+/**
+ * @brief Set the Tamano object
+ * 
+ * @param clave
+ * @param valor
+ * @return void
+ */
+void Hashmap::insertar(string clave, product valor) {
+    int indice = hash(clave);
+    productNode* nuevo = new productNode(clave, valor, tabla[indice]);
+    tabla[indice] = nuevo;
+}
+
+/**
+ * @brief Print the products
+ * 
+ * @param clave
+ * @return void
  */
 void Hashmap::imprimir(string clave) {
     int indice = hash(clave);
@@ -80,7 +102,9 @@ void Hashmap::imprimir(string clave) {
 }
 
 /**
- * @brief Prints all products in the hashmap.
+ * @brief Print all products
+ * 
+ * @return void
  */
 void Hashmap::printAll() {
     for (int i = 0; i < tamano; i++) {
@@ -93,28 +117,11 @@ void Hashmap::printAll() {
 }
 
 /**
- * @brief Gets the size of the hashmap.
+ * @brief Remove product
  * 
- * @return int The size of the hashmap.
- */
-int Hashmap::getTamano() {
-    return tamano;
-}
-
-/**
- * @brief Gets the array of productNode pointers.
- * 
- * @return productNode** The array of productNode pointers.
- */
-productNode** Hashmap::getTabla() {
-    return tabla;
-}
-
-/**
- * @brief Removes a product from the hashmap by ID.
- * 
- * @param id The ID of the product to remove.
- * @param clave The key of the product to remove.
+ * @param id
+ * @param clave
+ * @return void
  */
 void Hashmap::remove(int id, string clave) {
     int indice = hash(clave);
@@ -139,9 +146,7 @@ void Hashmap::remove(int id, string clave) {
     }
 }
 
-/**
- * @brief Destroys the Hashmap object.
- */
+// Destructor
 Hashmap::~Hashmap() {
     for (int i = 0; i < tamano; i++) {
         productNode* nodo = tabla[i];

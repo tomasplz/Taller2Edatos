@@ -10,12 +10,12 @@ using namespace std;
 class clientFactory
 {
 public:
-    clientFactory(int numOldClient, int numHandicappedClient, int numPregnantClient, int numNormalClient); // Constructor.
-    client* createClient(string name, int age, int type); // Create a client.
-    ~clientFactory(); // Destructor.
+    clientFactory(int numOldClient, int numHandicappedClient, int numPregnantClient, int numNormalClient); // Constructor
+    client* createClient(string name, int age, int type); // Create a client
+    ~clientFactory(); // Destructor
 private:
-    int numOldClient; // Number of old clients.
-    int numHandicappedClient; // Number of handicapped clients.
-    int numPregnantClient; // Number of pregnant clients.
-    int numNormalClient; // Number of normal clients.
+    int numOldClient; // Number of old clients
+    int numHandicappedClient; // Number of handicapped clients
+    int numPregnantClient; // Number of pregnant clients
+    int numNormalClient; // Number of normal clients
 };

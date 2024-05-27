@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    Sys *sys = new Sys(); // Create a new system.
-    sys -> run(); // Run the system.
+    Sys *sys = new Sys();
+    sys -> run();
     return 0;
 }

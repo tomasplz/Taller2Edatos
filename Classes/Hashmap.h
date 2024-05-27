@@ -7,18 +7,18 @@ using namespace std;
 
 class Hashmap {
 private:
-productNode** tabla; //array of productNode pointers
-int tamano; //size of the array
-int hash(string clave); //hash function
+productNode** tabla; // Table
+int tamano; // Size
+int hash(string clave); // Hash function
 
 public:
-Hashmap(int tamano); //constructor
-void insertar(product valor, string clave); //insert product into hashmap
-void remove(int id, string clave); //remove product from hashmap
-product buscar(int id); //search for product by id
-void imprimir(string clave); //print all products with the same key
-int getTamano(); //get size of the array
-productNode **getTabla(); //get array of productNode pointers
-void printAll(); //print all products in the hashmap
-~Hashmap(); //destructor
+void remove(int id, string clave); // Remove product
+Hashmap(int tamano); // Constructor with size
+void insertar(string clave, product valor); // Insert product
+product buscar(int id); // Search product
+void imprimir(string clave); // Print products
+int getTamano(); // Get size
+productNode **getTabla(); // Get table
+void printAll(); // Print all products
+~Hashmap(); // Destructor
 };
